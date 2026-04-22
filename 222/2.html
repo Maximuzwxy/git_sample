@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - Page 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 700px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: slideIn 0.8s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        h1 {
+            color: #f5576c;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            font-size: 1.1em;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li {
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.1em;
+            color: #2d3436;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        li::before {
+            content: "✨ ";
+            margin-right: 10px;
+        }
+        
+        .intro {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Features</h1>
+        <p class="intro">Discover what makes our platform special and powerful</p>
+        <ul>
+            <li>Modern Design with Beautiful Gradients</li>
+            <li>Responsive Layout for All Devices</li>
+            <li>Smooth Animations and Transitions</li>
+        </ul>
+    </div>
+</body>
+</html>
